@@ -49,6 +49,7 @@ public class SpeciesTypeService {
     public SpeciesType createSpeciesType(String name, String description) {
         SpeciesType st = new SpeciesType(nextId, name, description);
         speciesTypeList.add(st);
+        nextId++;
         return st;
     }
 
